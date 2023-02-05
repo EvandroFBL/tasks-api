@@ -1,0 +1,21 @@
+{
+  "name": "tasks-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "API with no use of frameworks for the management of tasks. Challenge one from Node trail of the Rocketseat's Ignite Journey.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvandroFBL/tasks-api.git"
+  },
+  "keywords": [],
+  "author": "EvandroFBL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvandroFBL/tasks-api/issues"
+  },
+  "homepage": "https://github.com/EvandroFBL/tasks-api#readme"
+}
