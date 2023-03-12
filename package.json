@@ -5,7 +5,8 @@
   "description": "API with no use of frameworks for the management of tasks. Challenge one from Node trail of the Rocketseat's Ignite Journey.",
   "main": "index.js",
   "scripts": {
-    "dev": "node --watch src/server.js"
+    "dev": "node --watch src/server.js",
+    "importCsv": "node --watch import/importCsv.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/EvandroFBL/tasks-api/issues"
   },
-  "homepage": "https://github.com/EvandroFBL/tasks-api#readme"
+  "homepage": "https://github.com/EvandroFBL/tasks-api#readme",
+  "dependencies": {
+    "csv-parse": "^5.3.6"
+  }
 }
