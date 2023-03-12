@@ -1,6 +1,7 @@
 # Tasks API
 
 ![GitHub](https://img.shields.io/github/license/EvandroFBL/tasks-api?style=for-the-badge) ![GitHub last commit](https://img.shields.io/github/last-commit/EvandroFBL/tasks-api?style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/EvandroFBL/tasks-api?style=for-the-badge)
+
 API with no use of frameworks for the management of tasks. Challenge one from Node trail of the Rocketseat's Ignite Journey.
 Download and import the [Insomnia File](insomnia_tasks_api.json) for making the API calls.
 
