@@ -50,6 +50,7 @@ export class Database {
             let rowInfo = this.#database[table][rowIndex]
             if (data.title) Object.assign(rowInfo, {title: data.title})
             if (data.description) Object.assign(rowInfo, {description: data.description})
+            if (data.completed_at) Object.assign(rowInfo, {completed_at: data.completed_at})
             Object.assign(rowInfo, {updated_at: new Date()})
             this.#database[table][rowIndex] = rowInfo
             this.#persist();
