@@ -20,7 +20,7 @@ export class Database {
     select(table, search) {
         let data = this.#database[table] ?? [];
         
-        if(search.title || search.description) {
+        if(search.title) {
             data = data.filter(row => {
                 return Object.entries(search).some(([key, value]) => {
                     if(value) {
@@ -46,10 +46,14 @@ export class Database {
     update(table, id, data) {
         const rowIndex = this.#database[table].findIndex(row => row.id === id);
 
-        if(rowIndex) {
-            this.#database[table][rowIndex] = { id, ...data }
+        if(rowIndex > -1) {
+            let rowInfo = this.#database[table][rowIndex]
+            if (data.title) Object.assign(rowInfo, {title: data.title})
+            if (data.description) Object.assign(rowInfo, {description: data.description})
+            Object.assign(rowInfo, {updated_at: new Date()})
+            this.#database[table][rowIndex] = rowInfo
             this.#persist();
-        }    
+        }
     }
 
     delete(table, id) {
