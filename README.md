@@ -18,16 +18,16 @@ Download and import the [Insomnia File](insomnia_tasks_api.json) for making the 
 ## Routes
 
 - **GET** - */tasks*
--- For getting all the tasks.
--- Accept query params (title and description) for filtering.
+    - For getting all the tasks.
+    - Accept query params (title and description) for filtering.
 - **POST** - */tasks*
--- For creating a task.
+    - For creating a task.
 - **PUT** - */tasks/:id*
--- For updating a task.
+    - For updating a task.
 - **PATCH** - */tasks/:id/complete*
--- For toggling the complete status of a task.
+    - For toggling the complete status of a task.
 - **DELETE** - */tasks/:id*
--- For deleting a task.
+    - For deleting a task.
 
 ## Tech
 
